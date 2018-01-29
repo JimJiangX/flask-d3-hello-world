@@ -43,11 +43,7 @@ def data(ndata=100):
 if __name__ == "__main__":
     import os
 
-    port = 8000
+    port = 8001
 
-    # Open a web browser pointing at the app.
-    os.system("open http://0.0.0.0:{0}".format(port))
-
-    # Set up the development server on port 8000.
     app.debug = True
-    app.run(port=port)
+    app.run(host="0.0.0.0",port=port)
